@@ -17,7 +17,11 @@
 </form>
 
 <?php
-
+    require_once 'Classes/Car.php';
+    $car01 = new Car ("Bmw", "blue");
+    echo $car01->setBrand("Volvo");
+    $car01->setColor("yellow");
+    echo $car01->getColor();
 ?>
 
 </body>
