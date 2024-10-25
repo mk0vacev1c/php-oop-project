@@ -26,7 +26,7 @@ class Signup extends Dbh {
         }
     }
 
-    private function signupUser() {
+    public function signupUser() {
         // Error Handlers
         if($this->isEmptySubmit()) {
             header("Location: " . $_SERVER['DOCUMENT_ROOT'] . '/index.php');
